@@ -176,3 +176,74 @@ b. Gauss-Seidel Iterative Method
 <p><strong>Example:</strong> Solve <code>dy/dx = x + y</code> with <code>y(0) = 1</code> and <code>h = 0.1</code>.</p>
 
 <p><strong>Advantages:</strong> The 4th-order Runge-Kutta method offers high accuracy with relatively simple computations and is suitable for a broad range of differential equations.</p>
+<h2>4. Matrix Inversion</h2>
+
+<h3>Matrix Inversion Overview</h3>
+<p>Matrix inversion is a fundamental concept in linear algebra that allows us to solve systems of linear equations represented in matrix form. If we have a square matrix <code>A</code>, its inverse, denoted as <code>A<sup>-1</sup></code>, is defined such that:</p>
+<p><code>A * A<sup>-1</sup> = I</code>, where <code>I</code> is the identity matrix.</p>
+<p>The inverse of a matrix exists only if the matrix is non-singular (i.e., its determinant is non-zero). Matrix inversion is widely used in various fields, including engineering, physics, computer science, and economics, particularly for solving linear systems and performing linear transformations.</p>
+
+<h3>Methods for Matrix Inversion</h3>
+<p>Several methods exist to compute the inverse of a matrix. One effective method is the Gauss-Jordan elimination, which involves performing row operations on an augmented matrix.</p>
+
+<h3>Gauss-Jordan Elimination Method</h3>
+<p>The Gauss-Jordan elimination method transforms the augmented matrix <code>[A | I]</code> into reduced row echelon form (RREF), effectively finding the inverse.</p>
+
+<h4>Steps:</h4>
+<ol>
+    <li><strong>Form the Augmented Matrix:</strong> Create an augmented matrix <code>[A | I]</code>, where <code>I</code> is the identity matrix of the same size as <code>A</code>.</li>
+    <li><strong>Row Operations:</strong> Perform the following row operations to transform the left side (matrix <code>A</code>) into the identity matrix:
+        <ul>
+            <li><strong>Row Swap:</strong> Swap two rows if necessary.</li>
+            <li><strong>Scaling:</strong> Multiply a row by a non-zero scalar.</li>
+            <li><strong>Row Addition/Subtraction:</strong> Add or subtract multiples of one row from another to eliminate variables.</li>
+        </ul>
+    </li>
+    <li><strong>Achieve Reduced Row Echelon Form:</strong> Continue performing row operations until the left side of the augmented matrix is the identity matrix. The right side will then be the inverse matrix <code>A<sup>-1</sup></code>.</li>
+</ol>
+
+<h4>Example:</h4>
+<p>Consider the matrix <code>A = [[4, 2], [3, 1]]</code>. We want to find its inverse using Gauss-Jordan elimination:</p>
+<pre>
+1. Form the augmented matrix:
+   [ 4  2 | 1 0 ]
+   [ 3  1 | 0 1 ]
+
+2. Perform row operations:
+   a) R1 = R1 / 4
+      [ 1  0.5 | 0.25 0 ]
+      [ 3  1   | 0    1 ]
+
+   b) R2 = R2 - 3*R1
+      [ 1  0.5 | 0.25 0 ]
+      [ 0 -0.5 | -0.75 1 ]
+
+   c) R2 = R2 / -0.5
+      [ 1  0.5 | 0.25 0 ]
+      [ 0  1   | 1.5 -2 ]
+
+   d) R1 = R1 - 0.5*R2
+      [ 1  0   | -0.5 1 ]
+      [ 0  1   | 1.5 -2 ]
+
+Final form:
+   [ 1  0 | -0.5 1 ]
+   [ 0  1 | 1.5 -2 ]
+</pre>
+<p>Thus, the inverse is <code>A<sup>-1</sup> = [[-0.5, 1], [1.5, -2]]</code>.</p>
+
+<h3>Advantages of Matrix Inversion</h3>
+<ul>
+    <li><strong>Solving Linear Systems:</strong> Matrix inversion provides a direct method for solving systems of linear equations of the form <code>Ax = b</code> by calculating <code>x = A<sup>-1</sup>b</code>.</li>
+    <li><strong>Linear Transformations:</strong> Inverse matrices are essential for reversing transformations applied to data or geometric figures in various applications.</li>
+    <li><strong>Computation of Determinants:</strong> The process of finding an inverse often involves determinants, enhancing understanding of matrix properties.</li>
+</ul>
+
+<h3>Key Points to Remember</h3>
+<ul>
+    <li>The inverse of a matrix exists only if the matrix is square and non-singular (determinant ≠ 0).</li>
+    <li>Row operations in Gauss-Jordan elimination can be computationally intensive for large matrices.</li>
+    <li>Other methods for finding matrix inverses include using adjugates and cofactors, but Gauss-Jordan is often preferred for its straightforward approach.</li>
+</ul>
+
+</body>
