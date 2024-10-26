@@ -80,9 +80,6 @@ b. Gauss-Seidel Iterative Method
 </body>
 </html>
 
-
-<h1>Numerical Methods for Solving Equations</h1>
-
 <h2>2. Solution of Non-linear Equations</h2>
 <p>Non-linear equations often require specialized methods to solve because they do not produce a straight line. The following methods approximate roots by iteration, aiming to find points where <code>f(x) = 0</code>.</p>
 
