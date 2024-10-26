@@ -36,6 +36,7 @@ int main()
         else
         {
             cout << "Exiting..." << endl;
+            break;
         }
     }
 }
