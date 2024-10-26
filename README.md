@@ -1,4 +1,10 @@
 <body>
+      
+### Ahsanul Islam Emon - 2107115
+
+### Khadimul Islam Mahi - 2107076
+
+### Tanha Sayed Ahona - 2107093
 
 These are some common methods to solve systems of linear equations, of the form Ax = b, where A is the matrix of coefficients, x is the vector of unknowns, and b is the constant vector.<br>
 
