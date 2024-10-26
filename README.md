@@ -1,18 +1,3 @@
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linear Equations - Solutions</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; }
-        h1 { color: #333; }
-        h2 { color: #555; }
-.example { font-weight: bold; color: #444; }
-        .method { margin-bottom: 20px; }
-        .key-point { color: #006699; font-style: italic; }
-    </style>
-</head>
 <body>
 
 These are some common methods to solve systems of linear equations, of the form Ax = b, where A is the matrix of coefficients, x is the vector of unknowns, and b is the constant vector.
