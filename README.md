@@ -15,12 +15,9 @@
 </head>
 <body>
 
-    <h1>Solving Systems of Linear Equations</h1>
 These are some common methods to solve systems of linear equations, of the form Ax = b, where A is the matrix of coefficients, x is the vector of unknowns, and b is the constant vector.
 
-    <div class="method">
-        <h2>a. Jacobi Iterative Method</h2>
-        <p class="example">Example: Solve the system:<br>
+
 3x + y = 9 
             x + 4y = 12
         </p>
@@ -34,7 +31,7 @@ These are some common methods to solve systems of linear equations, of the form 
         <p class="key-point">Key Point: Jacobi only updates each variable after a full iteration. This makes Jacobi much slower to converge than Gauss-Seidel.</p>
     </div>
 
-    <div class="method">
+
 b. Gauss-Seidel Iterative Method
         <p class="example">Example: Solve the same system:
             3x + y = 9 
@@ -64,7 +61,6 @@ b. Gauss-Seidel Iterative Method
         <p class="key-point">Key Point: Gauss Elimination is systematic but computationally intensive for larger systems.</p>
     </div>
 
-    <div class="method">
 <h2>d. Gauss-Jordan Elimination</h2>
         <p class="example">Example: Solve the same system:<br>
             x + y + z = 6 <br>
@@ -79,7 +75,7 @@ b. Gauss-Seidel Iterative Method
         <p class="key-point">Key Point: Gauss-Jordan provides a one-step solution but requires more operations than Gauss Elimination.</p>
     </div>
 
-    <div class="method">
+  
 <h2>e. LU Factorization</h2>
         <p class="example">Example: Solve the system:<br>
             x + y + z = 6 <br>
