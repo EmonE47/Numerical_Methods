@@ -1,9 +1,10 @@
 <body>
 
-These are some common methods to solve systems of linear equations, of the form Ax = b, where A is the matrix of coefficients, x is the vector of unknowns, and b is the constant vector.
+These are some common methods to solve systems of linear equations, of the form Ax = b, where A is the matrix of coefficients, x is the vector of unknowns, and b is the constant vector.<br>
 
 
-3x + y = 9 
+a. Jacobi iterative method <br>
+      3x + y = 9 
             x + 4y = 12
         </p>
         <p><strong>How It Works:</strong></p>
